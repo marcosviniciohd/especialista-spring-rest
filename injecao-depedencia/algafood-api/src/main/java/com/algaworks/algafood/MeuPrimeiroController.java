@@ -10,6 +10,9 @@ public class MeuPrimeiroController {
     @GetMapping("/hello")
     @ResponseBody
     public String hello(){
-        return "<h1>Meu primeiro controller.</h1>";
+        return "<html>" +
+                "<h1>Meu primeiro controller</h1>" +
+                "<h2>Apredendo sobre Injeção de dependências</h2>" +
+                "</html>";
     }
 }
