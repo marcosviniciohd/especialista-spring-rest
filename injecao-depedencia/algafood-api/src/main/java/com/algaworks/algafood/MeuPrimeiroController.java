@@ -22,8 +22,8 @@ public class MeuPrimeiroController {
         Cliente cliente = new Cliente("Marcos Vinício", "marcosviniciohd@hotmail.com", "349225599");
         ativacaoClienteService.ativar(cliente);
         return "<html>" +
-                "<h1>" + cliente.getNome() + "</h1>" +
-                "<h2>" + cliente.getTelefone() + "</h2>" +
+                "<h1>" + "<p> Seu nome é: " +  cliente.getNome() +"</p>" +  "</h1>" +
+                "<h2>" + "<p> Seu telefone é: " + cliente.getTelefone() + "</p>" + "</h2>" +
                 "</html>";
     }
 }
