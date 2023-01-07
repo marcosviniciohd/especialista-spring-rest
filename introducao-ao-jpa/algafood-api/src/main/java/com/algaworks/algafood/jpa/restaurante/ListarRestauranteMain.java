@@ -24,7 +24,7 @@ public class ListarRestauranteMain {
 		List<Restaurante> todosRestaurantes = restauranteRepository.todos();
 		System.out.println("_________________________________________________________________________");
 		for (Restaurante restaurante : todosRestaurantes) {
-			System.out.println(restaurante.getNome());
+			System.out.printf("Restaurante: %s - Preço frete: %.2f - Tipo Cozinha: %s\n", restaurante.getNome(), restaurante.getTaxaFrete(), restaurante.getCozinha().getNome());
 		}
 		System.out.println("_________________________________________________________________________");
 
