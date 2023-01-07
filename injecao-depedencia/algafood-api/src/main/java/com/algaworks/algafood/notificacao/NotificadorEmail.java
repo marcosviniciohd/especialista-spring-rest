@@ -4,7 +4,7 @@ import com.algaworks.algafood.modelo.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
-@Profile("prod")
+
 @TipoDoNotificador(NivelUrgencia.URGENTE)
 @Component
 public class NotificadorEmail implements Notificador {
