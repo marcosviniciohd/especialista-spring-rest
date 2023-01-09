@@ -23,9 +23,6 @@ public class CozinhaController {
 
     @GetMapping("/{cozinhaId}")
     public Cozinha buscar(@PathVariable Long cozinhaId){
-        System.out.println("------------------------------------------------------");
-        System.out.println(cozinhaId);
-        System.out.println("------------------------------------------------------");
         return cozinhaRepository.porId(cozinhaId);
 
     }
